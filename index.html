@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Overdoughs Cookie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Overdoughs Cookie logo" class="logo" />
+      <div class="site-name">Overdoughs Cookie</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#shop">Shop</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- INTRO / HOME -->
+  <main>
+    <section id="home" class="hero">
+      <!-- intro overlay (logo + tagline animations) -->
+      <div class="intro">
+        <img src="images/logo.png" alt="Logo" class="intro-logo" />
+        <h1 class="intro-tag">When the craving flows, It's Overdoughs</h1>
+      </div>
+
+      <div class="hero-content">
+        <div class="quote">“When the craving flows, It's Overdoughs”</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section">
+      <div class="container narrow">
+        <h2>WHERE PASSION MEETS DOUGH</h2>
+        <p>• We’re a student-founded startup, smashing the pastriarchy one cookie at a time.
+Created in 2023 by a group of hardworking students with a shared love for sweets and big dreams. Over Doughs began as a simple passion project that turned into something real — a cookie business built on creativity, confidence, and irresistible flavor.
+Every batch we bake represents who we are — bold, playful, and always craving better.</p>
+
+        <h3>INGREDIENTS</h3>
+        <p>• Our cookies are made from classic ingredients, elevated by the perfect balance and precision in every step.</p>
+
+        <div class="ingredients">
+          <strong>INGREDIENTS LIST:</strong>
+          <ul>
+            <li>Butter</li>
+            <li>White & Brown Sugar</li>
+            <li>Baking Soda</li>
+            <li>Chocolate Chips</li>
+            <li>Vanilla Syrup</li>
+            <li>Matcha Powder</li>
+            <li>Cocoa Powder</li>
+            <li>Flour</li>
+            <li>Egg</li>
+          </ul>
+        </div>
+
+        <p><strong>ABOUT OUR INGREDIENTS</strong><br>
+        – It’s the ratios and precise temperature control that makes our dough stand out — giving you that chewy center, crisp edge, and signature Over Doughs flavor that keeps you coming back for more.</p>
+
+        <h3>WHAT MAKES OUR COOKIES SPECIAL</h3>
+        <p>• Over Doughs’ cookies stand out because of our unique flavor combinations, perfectly balanced ingredients, and attention to detail in every batch.
+We offer a variety of flavors — Matcha, Velvet Rouge, and Chocolate Chip — so there’s something for every cookie lover.
+Our commitment to quality and passion for baking shines through in every bite, making each cookie a reminder that when the craving flows, it’s Over Doughs — the dough that satisfies.</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="page-section">
+      <div class="container">
+        <h2>Products</h2>
+
+        <div class="products-grid">
+          <!-- product 1 -->
+          <div class="product">
+            <input type="checkbox" id="p1" class="toggler" />
+            <label for="p1" class="image-wrap">
+              <img src="images/cookiezepam.png" alt="Cookie zepam (Matcha)" />
+            </label>
+            <div class="desc">
+              <h3>Cookie zepam — Matcha</h3>
+              <p>A soft, earthy matcha cookie that gives you that calm, cozy glow. Perfectly balanced with sweetness and green matcha goodness — it’s the cookie for you.</p>
+              <label for="p1" class="close">Close</label>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div class="product">
+            <input type="checkbox" id="p2" class="toggler" />
+            <label for="p2" class="image-wrap">
+              <img src="images/cookie%20rouge.png" alt="Cookie rouge (Velvet Rouge)" />
+            </label>
+            <div class="desc">
+              <h3>Cookies rouge — Velvet Rouge</h3>
+              <p>Fall in love at first bite. This red velvet cookie is rich, smooth, and filled with sweet, heartwarming flavor — a treat that’s as pretty as it is delicious.</p>
+              <label for="p2" class="close">Close</label>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+          <div class="product">
+            <input type="checkbox" id="p3" class="toggler" />
+            <label for="p3" class="image-wrap">
+              <img src="images/Chococaine.png" alt="Chococaine (Chocolate Chip)" />
+            </label>
+            <div class="desc">
+              <h3>Chococaine — Chocolate chip</h3>
+              <p>The classic, redefined. Gooey chocolate chips, golden edges, and that melt-in-your-mouth magic — baked to satisfy every craving, every time and leaves you wanting more.</p>
+              <label for="p3" class="close">Close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="page-section">
+      <div class="container narrow">
+        <h2>WE SHIP NATIONWIDE</h2>
+        <p>• Your cravings delivered straight to your door — fresh, fast, and full of flavor!</p>
+        <ul>
+          <li>Entrego</li>
+          <li>Transportify</li>
+          <li>SPX Express</li>
+          <li>GoGo Xpress</li>
+        </ul>
+
+        <!-- trigger for order modal -->
+        <div class="shop-actions">
+          <label for="orderModal" class="btn primary">Order Now</label>
+        </div>
+
+       <!-- Order modal -->
+<input type="checkbox" id="orderModal" class="modal-toggler" />
+<div class="modal-backdrop">
+  <div class="modal">
+    <label for="orderModal" class="modal-close" title="Close">×</label>
+
+    <div class="modal-body">
+      <h3>Place your order</h3>
+
+      <!-- Formspree form -->
+      <form class="order-form" action="https://formspree.io/f/xldoeqoz" method="POST" target="_blank">
+        <label>Full Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>Email
+          <input type="email" name="email" placeholder="you@email.com" required />
+        </label>
+
+        <label>Product
+          <select name="product">
+            <option>Cookie zepam — Matcha</option>
+            <option>Cookies rouge — Velvet Rouge</option>
+            <option>Chococaine — Chocolate Chip</option>
+          </select>
+        </label>
+
+        <label>Quantity
+          <input type="number" min="1" name="quantity" value="1" required />
+        </label>
+
+        <label>Address
+          <input type="text" name="address" placeholder="Delivery address" required />
+        </label>
+
+        <!-- hidden thank-you toggle -->
+        <input type="checkbox" id="thankYou" class="thank-toggler" />
+        <button type="submit" class="btn primary submit-btn">Submit Order</button>
+      </form>
+
+      <!-- Thank you panel -->
+      <div class="thank-panel">
+        <h4>Thank you!</h4>
+        <p>Your order has been received. We'll reach out with details shortly.</p>
+        <label for="thankYou" class="btn">Place another order</label>
+        <label for="orderModal" class="btn alt">Close</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- CATERING -->
+    <section id="catering" class="page-section">
+      <div class="container narrow">
+        <h2>CATERING</h2>
+        <p>• Got an event coming up? We cater for birthdays, office parties, student events, and celebrations of all kinds!
+Choose from assorted boxes or custom cookie trays — made fresh, packed with flavor, and guaranteed to impress.</p>
+        <p><em>[Send us a message to book catering or bulk orders!]</em></p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page-section">
+      <div class="container narrow">
+        <h2>CONNECT WITH US</h2>
+        <p>• Follow us for updates, promos, and behind-the-scenes dough moments!</p>
+        <ul class="contacts">
+          <li>Facebook: Over Doughs Cookies</li>
+          <li>Shopee: Over Doughs Official</li>
+          <li>TikTok Shop: @overdoughs.cookies</li>
+          <li>Instagram: @overdoughs.cookies</li>
+          <li>X (Twitter): @OverDoughsPH</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© Overdoughs Cookie — 2023</small>
+  </footer>
+
+</body>
+</html>
